@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная №1</title>
+    <link rel="icon" href="https://m9snoi.net/files/forums_imgs/none.jpg"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/svg.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+</head>
+<body style="background-image: url(images/background.png); background-position: top center; background-size: cover;">
+<header class="hat">
+    Вариант 3011<br>Мозговая Лариса<br>Группа P32311
+</header>
+<div class="base">
+    <p><img src="cattt.gif" id="cat" alt="cat"></p>
+    <form class="xyr_in">
+        <div class="select">
+            <strong>Выберете значение X:</strong>
+            <label>
+                <select class="x_in" >
+                    <option value="-5">-5</option>
+                    <option value="-4">-4</option>
+                    <option value="-3">-3</option>
+                    <option value="-2">-2</option>
+                    <option value="-1">-1</option>
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+        </div>
+        <div class="text">
+            <label>
+                <strong>Введите значение У:</strong>
+                <span class="error"></span>
+                <input type="text" class="y_in" placeholder="Введите число от -5 до 5">
+            </label>
+        </div>
+        <div class="r_in">
+            <strong>Выберете значение R:</strong><br>
+            <label>
+                <span class="radio_r"><input name="r" type="radio" value="1" checked> 1
+                    <input name="r" type="radio" value="2"> 2
+                    <input name="r" type="radio" value="3"> 3
+                    <input name="r" type="radio" value="4"> 4
+                    <input name="r" type="radio" value="5"> 5</span>
+            </label>
+        </div>
+        <div class="send_clear_but">
+            <button type="submit" id="send"><span class="send_clear">Отправить</span></button>
+            <button type="button" id="clear"><span class="send_clear">Сбросить</span></button>
+        </div>
+    </form>
+    <div class="svg">
+        <svg width="400" height="400">
+            <line x1="0" x2="400" y1="200" y2="200" stroke="black"></line>
+            <line x1="200" x2="200" y1="0" y2="400" stroke="black"></line>
+            <polygon points="200,0 194,25,206,25" strake="black"></polygon>
+            <polygon points="400,200 375,206 375,194" stroke="black"></polygon>
+
+            <line x1="260" x2="260" y1="205" y2="195" stroke="black"></line>
+            <line x1="320" x2="320" y1="205" y2="195" stroke="black"></line>
+
+            <line x1="80"  x2="80"  y1="205" y2="195" stroke="black"></line>
+            <line x1="140" x2="140" y1="205" y2="195" stroke="black"></line>
+
+            <line x1="195" x2="205" y1="140" y2="140" stroke="black"></line>
+            <line x1="195" x2="205" y1="80"  y2="80"  stroke="black"></line>
+
+            <line x1="195" x2="205" y1="260" y2="260" stroke="black"></line>
+            <line x1="195" x2="205" y1="320" y2="320" stroke="black"></line>
+
+            <text x="250" y="190">R/2</text>
+            <text x="315" y="190">R</text>
+
+            <text x="70" y="190">-R</text>
+            <text x="125" y="190">-R/2</text>
+
+            <text x="210" y="145">R/2</text>
+            <text x="210" y="85">R</text>
+
+            <text x="210" y="265">-R/2</text>
+            <text x="210" y="325">-R</text>
+
+            <polygon class="figure" points="80,200 80,80 200,80,200,200" fill="white" fill-opacity="0.5" stroke="blue"></polygon>
+
+            <path class="figure" d="M 260 200 A 70 70, 90, 0, 0, 200 140 L 200 200 Z" fill="white" fill-opacity="0.5" stroke="blue"></path>
+
+            <polygon class="figure" points="80,200 200,200 200,260" fill="white" fill-opacity="0.5" stroke="blue"></polygon>
+
+            <circle r="4" cx="200" cy="200" id="pointer" fill="purple" ></circle>
+        </svg>
+    </div>
+    <div class="scroll">
+        <table class="result">
+            <tr class="result_head">
+                <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>Результат</th>
+                <th>Время выполнения</th>
+                <th>Текущее время</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

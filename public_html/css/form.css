@@ -1,0 +1,86 @@
+.xyr_in{
+    width: 600px;
+    height: 230px;
+    background-color: rgb(2, 120, 128);
+    margin-left: 3%;
+    margin-top: 1%;
+    border-width: thick;
+    border-style: double;
+    border-color: #fffbff;
+    border-radius: 50px;
+    padding: 1%;
+    box-shadow: 0 0 6px;
+
+}
+.select{
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    width: 48%;
+    height: 40%;
+    border-style: double;
+    border-color: white;
+    background-color: rgb(101, 213, 217);
+    border-top-left-radius: 50px;
+    text-align: right;
+    padding: 1%;
+    float: left;
+    box-shadow: inset 0 0 6px;
+}
+.x_in{
+    width: 98%;
+    height: 40%;
+    border-radius: 20px;
+    padding-left: 1%;
+}
+button, select, input:focus{
+    outline: none;
+}
+.text{
+    width: 48%;
+    height: 40%;
+    border-style: double;
+    border-color: white;
+    background-color: rgb(101, 213, 217);
+    border-top-right-radius: 50px;
+    text-align: left;
+    padding: 1%;
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+    box-shadow: inset 0 0 6px;
+}
+.y_in{
+    width: 98%;
+    height: 40%;
+    border-radius: 20px;
+    padding-left: 1%;
+    border-color: rgb(255, 255, 255);
+}
+.r_in{
+    width: 48%;
+    height: 50%;
+    border-style: double;
+    border-color: white;
+    background-color: rgb(101, 213, 217);
+    border-bottom-left-radius: 50px;
+    padding: 1%;
+    float: left;
+    text-align: right;
+    margin-top: 2.5%;
+    margin-left: 0.5%;
+    box-shadow: inset 0 0 6px;
+}
+.radio_r{
+    margin-left: 1%;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+}

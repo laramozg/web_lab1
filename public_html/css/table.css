@@ -1,0 +1,28 @@
+.result {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.result th{
+    width: 110px;
+    height: 40px;
+    border: solid 1px white;
+    border-collapse: collapse;
+}
+.result_head{
+    background-color: rgb(222, 171, 156);
+    text-align: center;
+}
+.resultFromPhp td{
+    border: solid 1px white;
+    border-collapse: collapse;
+}
+
+.resultFromPhp {
+    text-align: center;
+    background-color: rgb(227, 213, 210);
+}

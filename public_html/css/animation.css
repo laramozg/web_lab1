@@ -1,0 +1,55 @@
+.svg {
+    animation-duration: 3s;
+    animation-name: slideinLeft;
+}
+
+@keyframes slideinLeft {
+    from {
+        position: absolute;
+        right: 3%;
+        top: -70%;
+    }
+
+    to {
+        position: absolute;
+        right: 3%;
+        top: 17%;
+    }
+}
+.xyr_in {
+    animation-duration: 3s;
+    animation-name: slideinRight;
+}
+
+@keyframes slideinRight {
+    from {
+        margin-left: -50%;
+        margin-top: 1%;
+    }
+
+    to {
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+}
+.result {
+    opacity:0;
+    animation: fadeInFromNone 4s; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
