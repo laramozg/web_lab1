@@ -73,7 +73,7 @@ button, select, input:focus{
 .radio_r{
     margin-left: 1%;
 }
-input[type="radio"]{
+input[type="checkbox"]{
     width: 20px;
     height: 20px;
     display: inline-block;

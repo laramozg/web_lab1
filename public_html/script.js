@@ -25,6 +25,15 @@ $(function () {
         checkY(x, y, r)
         event.preventDefault()
     })
+    $("input[name=r]").on("change", (e) => {
+        let value = e.currentTarget.defaultValue;
+
+        $("input[name=r]").map((index, item) => {
+            if (item.defaultValue !== value) {
+                item.checked = false;
+            }
+        })
+    })
 })
 
 function setPoint(x, y, r) {

@@ -15,6 +15,7 @@ if (checkValue($x, $y, $r)) {
     drawResult($answer);
 } else {
     http_response_code(400);
+    echo "Ошибка валидации";
 }
 
 function checkValue($x, $y, $r): bool
